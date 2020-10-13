@@ -10,13 +10,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  
 
   
   <title>
     Gadi Leh | Front End Developer.
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Gadi Lehmann, a Front End Developer">
   
   <meta name="keywords" content="Gadi Lehmann, JavaScript, ReactJS, React, CSS, HTML, Bootstrap, Sass" />
   <link rel="stylesheet" href="index.css" />
@@ -24,8 +25,29 @@
 
 <body>
 
-  <!-- ***** Header ***** -->
 
+<div class="md-modal md-effect-19" id="modal-19">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <button class="md-close">Close me!</button>
+    </div>
+  </div>
+</div>
+  
+  <button class="md-trigger md-setperspective" data-modal="modal-19">Slip from top</button>
+  
+  
+  
+  
+  
+  <!-- ***** Header ***** -->
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
@@ -48,7 +70,7 @@
           <span>Gadi Leh</span>
         </h1>
 
-        <p>A Front End Developer looking for an entry level position.</p>
+        <p>A Front End Developer looking for an <strong class="strongreen"> entry level position.</strong></p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -173,7 +195,7 @@
           </div>
           <div class="work__box">
             <div class="work__text">
-              <h3>Rock Paper Scissors</h3>
+              <h3>Rainer-mgm</h3>
               
               <ul class="work__list">
                 <li>HTML</li>
@@ -183,12 +205,12 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://gidonleh.github.io/paper-rock/" class="link__text">
+                <a href="https://rainer-mgm.com" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/gidonleh/paper-rock">
+                <!-- <a href="https://github.com/gidonleh/paper-rock">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="work__image-box">
@@ -268,6 +290,7 @@
         </li>
       </ul>
 
+      
      
       <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
@@ -281,10 +304,21 @@
     </div>
   </footer>
 
+  <form id="contactform">
+    <input type="text" name="name" id="name">
+    <input type="email" name="email" id="email">
+    <input type="text" name="phone" id="phone">
+    <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+    <button type="submit" name="submit" id="submit">Send</button>
+  </form>
+
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+  
   <script src="./index.js"></script>
+  
 </body>
 
 </html>
