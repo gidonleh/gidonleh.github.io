@@ -9,44 +9,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  
-
-  
+  <meta name="description" content="Gadi Lehmann, a Front End Developer">
+  <meta name="keywords" content="Gadi Lehmann, JavaScript, ReactJS, React, CSS, HTML, Bootstrap, Sass" />
+  <!-- website favicon -->
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADX4nH/7PG6DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADX4nH/1+Jx/9ficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf/X4nH/1+Jx/9ficf/X4nH/1+Jx/9ficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf/X4nH/1+Jx/9ficf/X4nH/1+Jx/9ficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf/X4nH/1+Jx/9ficf/X4nH/1+Jx/9ficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf/X4nH/1+Jx/9ficf/X4nH/1+Jx/9ficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf/X4nH/1+Jx/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1+Jx/9ficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf/X4nH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADb5YFv1+Jx/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANficf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/38AAP9/AAD/PwAA/z8AAP8fAAD/HwAA8A8AAPAPAAD4BwAA+AcAAPx/AAD8fwAA/n8AAP5/AAD/fwAA/38AAA==" rel="icon" type="image/x-icon" />
   <title>
     Gadi Leh | Front End Developer.
   </title>
 
-  <meta name="description" content="Gadi Lehmann, a Front End Developer">
-  
-  <meta name="keywords" content="Gadi Lehmann, JavaScript, ReactJS, React, CSS, HTML, Bootstrap, Sass" />
+  <!-- styles used for the input elements -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
+  <!-- my stylesheet -->
   <link rel="stylesheet" href="index.css" />
+  <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
 
 
-<!-- <div class="md-modal md-effect-19" id="modal-19">
+<div class="md-modal md-effect-19" id="modal-19">
   <div class="md-content">
-    <h3>Modal Dialog</h3>
+    <h3>Hi!<img src="https://media.giphy.com/media/dyk1xmJbZMXj0aK0q3/giphy.gif" width="60px"></h2></h3>
     <div>
-      <p>This is a modal window. You can do the following things with it:</p>
+      <p>My name is Gadi, and I'm a professional web developer</p>
       <ul>
-        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+        <li>Feel free to contact me at <a href="mailto:csgadileh@gmail.com"><strong>csgadileh@gmail.com</strong></a></li>
+        <li>You can also call me at <a href="tel:+972528762484"><strong>0528762484</strong></a></li>
+        <li>I challenge you to <strong class="md-close"><a href="#work">take a look at my projects list below</a></strong>
       </ul>
-      <button class="md-close">Close me!</button>
     </div>
   </div>
 </div>
   
-  <button class="md-trigger md-setperspective" data-modal="modal-19">Slip from top</button>
-  
-   -->
-  
-  
-  
+
+
+
+
+
   <!-- ***** Header ***** -->
   <header class="header" role="banner" id="top">
     <div class="row">
@@ -66,26 +68,27 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-
+          
           <span>Gadi Leh</span>
         </h1>
-
+        
         <p>A Front End Developer looking for an <strong class="strongreen"> entry level position.</strong></p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <a href="#" class="btn btn--pink md-trigger md-setperspective" style="text-align: center;" data-modal="modal-19">Click Me!</a>
+        <!-- <button class="md-trigger md-setperspective" data-modal="modal-19">Slip from top</button> -->
       </div>
     </div>
   </header>
-
+  
   <main role="main">
-
+    
     <!-- ***** Work ***** -->
-
+    
     <section class="work" id="work">
       <div class="row">
         <h2>Stuff I've been doing</h2>
         <div class="work__boxes">
-
-         
+          
+          
           <div class="work__box">
             <div class="work__text">
               <h3>Chat-App</h3>
@@ -303,14 +306,37 @@
       </div>
     </div>
   </footer>
-
   <form id="contactform">
-    <input type="text" name="name" id="name">
-    <input type="email" name="email" id="email">
-    <input type="text" name="phone" id="phone">
-    <textarea name="message" id="message" cols="30" rows="10" ></textarea>
-    <button type="submit" name="submit" id="submit">Send</button>
+
+  <section class="content">
+    <span class="input input--kuro">
+      <input class="input__field input__field--kuro" type="text" id="name"/>
+      <label class="input__label input__label--kuro" for="input-7">
+        <span class="input__label-content input__label-content--kuro">Name / Company Name</span>
+      </label>
+    </span>
+    <span class="input input--kuro">
+      <input class="input__field input__field--kuro" type="text" id="email" />
+      <label class="input__label input__label--kuro" for="input-8">
+        <span class="input__label-content input__label-content--kuro">Email</span>
+      </label>
+    </span>
+    <span class="input input--kuro">
+      <input class="input__field input__field--kuro" type="text" id="phone" />
+      <label class="input__label input__label--kuro" for="input-9">
+        <span class="input__label-content input__label-content--kuro">Phone Number</span>
+      </label>
+    </span>
+    <span class="input input--kyo">
+      <textarea class="input__field input__field--kyo" type="text" id="message" style="max-width: 400px; height: 200px;"></textarea>
+      <label class="input__label input__label--kyo" for="input-19">
+        <span class="input__label-content input__label-content--kyo" style="height: 200px;">Your Message To Me</span>
+      </label>
+    </span>
+    <button type="submit" name="submit" id="submit" onclick="checkFields()">Send</button>
+  </section>
   </form>
+
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
@@ -318,7 +344,55 @@
   <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
   
   <script src="./index.js"></script>
-  
+
+  <div class="md-overlay"></div><!-- the overlay element -->
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+      var polyfilter_scriptpath = '/js/';
+      
+      (function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
 </body>
 
 </html>

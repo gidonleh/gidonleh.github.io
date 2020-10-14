@@ -65,6 +65,23 @@ window.addEventListener("scroll", () => {
   }
 });
 
+function checkFields() {
+  let name=document.getElementById('name').value;
+  let email=document.getElementById('email').value;
+  let phone=document.getElementById('phone').value;
+  let message=document.getElementById('message').value;
+  
+  if( checkName(name) !== true){
+    alert(checkName(name));
+    return;
+  } else if ( validateEmail(email)!==true )  {
+    alert(validateEmail(email));
+    return;
+  } else if ( validatePhoneNumber(phone) !== true) {
+    alert(validatePhoneNumber(phone));
+    return;
+  }
+}
 // Listen for form submit
 
 document.getElementById('contactform').addEventListener('submit', submitForm);
@@ -97,3 +114,34 @@ function saveMessage(name, email, phone, message){
     message: message
   }) 
 }
+
+
+
+function checkName(name) {
+  let counter=0;
+
+  for (let index = 0; index < name.length; index++) {
+    if((name.charAt(index) > 1 || name.charAt(index) < 9))
+      return 'Name must contain only letters';
+      counter++;
+  }
+  if(counter<2) return 'Name is too short';
+
+  return true;
+}
+
+function validateEmail(mail) 
+{
+ if (!(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)))
+  {
+    return 'Invalid Email adress'
+  }
+  return true;
+}
+
+function validatePhoneNumber(phone) {
+  var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+  return re.test(phone);
+}
+
